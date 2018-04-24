@@ -1,44 +1,46 @@
 
 @echo off
 
+@chcp 65001>nul
+
 set CMD_LINE_ARGS=%*
 set MOD_CMD_LINE_ARGS=
 setlocal enabledelayedexpansion
 for %%g in (%CMD_LINE_ARGS%) do (
 	set a=%%g
-	set a=!a:клонировать=clone!
-	set a=!a:помощь=help!
-	set a=!a:инициировать=init!
-	set a=!a:добавить=add!
-	set a=!a:статус=status!
-	set a=!a:разница=diff!
-	set a=!a:зафиксировать=commit!
-	set a=!a:сбросить=reset!
-	set a=!a:удалить=rm!
-	set a=!a:переместить=mv!
-	set a=!a:ветка=branch!
-	set a=!a:перейти=checkout!
-	set a=!a:слить=merge!
-	set a=!a:устройство-слива=mergetool!
-	set a=!a:лог=log!
-	set a=!a:спрятать=stash!
-	set a=!a:метка=tag!
-	set a=!a:рабочее-дерево=worktree!
-	set a=!a:обновить=fetch!
-	set a=!a:получить=pull!
-	set a=!a:отправить=push!
-	set a=!a:далекий=remote!
-	set a=!a:подмодуль=submodule!
-	set a=!a:показать=show!
-	set a=!a:короткий-лог=shortlog!
-	set a=!a:описатьь=describe!
-	set a=!a:применить=apply!
-	set a=!a:выбрать-выборочно=cherry-pick!
-	set a=!a:перебазировать=rebase!
-	set a=!a:вернуть=revert!
-	set a=!a:разрезать=bisect!
-	set a=!a:обвинить=blame!
-	set a=!a:греп=grep!
+	set a=!a:╨║╨╗╨╛╨╜╨╕╤А╨╛╨▓╨░╤В╤М=clone!
+	set a=!a:╤Б╨┐╤А╨░╨▓╨║╨░=help!
+	set a=!a:╨╕╨╜╨╕╤Ж╨╕╨╕╤А╨╛╨▓╨░╤В╤М=init!
+	set a=!a:╨┤╨╛╨▒╨░╨▓╨╕╤В╤М=add!
+	set a=!a:╤Б╤В╨░╤В╤Г╤Б=status!
+	set a=!a:╤А╨░╨╖╨╜╨╕╤Ж╨░=diff!
+	set a=!a:╨╖╨░╤Д╨╕╨║╤Б╨╕╤А╨╛╨▓╨░╤В╤М=commit!
+	set a=!a:╤Б╨▒╤А╨╛╤Б╨╕╤В╤М=reset!
+	set a=!a:╤Г╨┤╨░╨╗╨╕╤В╤М=rm!
+	set a=!a:╨┐╨╡╤А╨╡╨╝╨╡╤Б╤В╨╕╤В╤М=mv!
+	set a=!a:╨▓╨╡╤В╨║╨░=branch!
+	set a=!a:╨┐╨╡╤А╨╡╨╣╤В╨╕=checkout!
+	set a=!a:╤Б╨╗╨╕╤В╤М=merge!
+	set a=!a:╤Г╤Б╤В╤А╨╛╨╣╤Б╤В╨▓╨╛-╤Б╨╗╨╕╨▓╨░=mergetool!
+	set a=!a:╨╗╨╛╨│=log!
+	set a=!a:╤Б╨┐╤А╤П╤В╨░╤В╤М=stash!
+	set a=!a:╨╝╨╡╤В╨║╨░=tag!
+	set a=!a:╤А╨░╨▒╨╛╤З╨╡╨╡-╨┤╨╡╤А╨╡╨▓╨╛=worktree!
+	set a=!a:╨╛╨▒╨╜╨╛╨▓╨╕╤В╤М=fetch!
+	set a=!a:╨┐╨╛╨╗╤Г╤З╨╕╤В╤М=pull!
+	set a=!a:╨╛╤В╨┐╤А╨░╨▓╨╕╤В╤М=push!
+	set a=!a:╨┤╨░╨╗╨╡╨║╨╕╨╣=remote!
+	set a=!a:╨┐╨╛╨┤╨╝╨╛╨┤╤Г╨╗╤М=submodule!
+	set a=!a:╨┐╨╛╨║╨░╨╖╨░╤В╤М=show!
+	set a=!a:╨║╨╛╤А╨╛╤В╨║╨╕╨╣-╨╗╨╛╨│=shortlog!
+	set a=!a:╨╛╨┐╨╕╤Б╨░╤В╤М╤М=describe!
+	set a=!a:╨┐╤А╨╕╨╝╨╡╨╜╨╕╤В╤М=apply!
+	set a=!a:╨▓╤Л╨▒╤А╨░╤В╤М-╨▓╤Л╨▒╨╛╤А╨╛╤З╨╜╨╛=cherry-pick!
+	set a=!a:╨┐╨╡╤А╨╡╨▒╨░╨╖╨╕╤А╨╛╨▓╨░╤В╤М=rebase!
+	set a=!a:╨▓╨╡╤А╨╜╤Г╤В╤М=revert!
+	set a=!a:╤А╨░╨╖╤А╨╡╨╖╨░╤В╤М=bisect!
+	set a=!a:╨╛╨▒╨▓╨╕╨╜╨╕╤В╤М=blame!
+	set a=!a:╨│╤А╨╡╨┐=grep!
 
 	if [!MOD_CMD_LINE_ARGS!] == [] (
 		set MOD_CMD_LINE_ARGS=!a!
