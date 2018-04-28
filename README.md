@@ -1,6 +1,6 @@
-# ГИТ
+# Cyrillic git (Kириллический гит)
 
-### git commands mapping  
+### git commands mapping (соответствие команд гита)
 
 | гит | git |
 |---|---|
