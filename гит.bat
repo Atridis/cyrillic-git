@@ -41,6 +41,7 @@ for %%g in (%CMD_LINE_ARGS%) do (
 	set a=!a:разрезать=bisect!
 	set a=!a:обвинить=blame!
 	set a=!a:греп=grep!
+	set a=!a:жопа=ass!
 
 	if [!MOD_CMD_LINE_ARGS!] == [] (
 		set MOD_CMD_LINE_ARGS=!a!
