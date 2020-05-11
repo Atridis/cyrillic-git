@@ -37,7 +37,7 @@
 |подмодуль|submodule|
 |показать|show|
 |короткий-лог|shortlog|
-|описатьь|describe|
+|описать|describe|
 |применить|apply|
 |выбрать-выборочно|cherry-pick|
 |перебазировать|rebase|
