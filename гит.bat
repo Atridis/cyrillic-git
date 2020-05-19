@@ -1,4 +1,4 @@
-
+﻿
 @echo off
 
 @chcp 65001>nul
@@ -33,7 +33,7 @@ for %%g in (%CMD_LINE_ARGS%) do (
 	set a=!a:подмодуль=submodule!
 	set a=!a:показать=show!
 	set a=!a:короткий-лог=shortlog!
-	set a=!a:описатьь=describe!
+	set a=!a:описать=describe!
 	set a=!a:применить=apply!
 	set a=!a:выбрать-выборочно=cherry-pick!
 	set a=!a:перебазировать=rebase!
